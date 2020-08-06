@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.top-bar-btn-style {
+  margin-left: 70%;
+  text-align: right;
+}
+.top-bar {
+  justify-content: space-between;
+  padding: 3%;
+}
