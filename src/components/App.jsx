@@ -6,6 +6,48 @@ import Topbar from "./Topbar";
 import Screen from "../images/screen-mockups.svg";
 import Messages from "../images/icon-messages.svg";
 import Communities from "../images/icon-communities.svg";
+<<<<<<< Codesandbox
+
+import Cards from "./Cards";
+import Intro from "./Intro";
+import features from "./features";
+import Features from "./Features";
+import Cta from "./Cta";
+import Footer from "./Footer";
+
+function createFeat(feature) {
+  return (
+    <Features
+      class={feature.classes}
+      title={feature.title}
+      text={feature.text}
+      imgALT={feature.imgALT}
+      img={feature.img}
+      imgKEY={feature.imgKEY}
+    />
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Topbar />
+      <Grid container>
+        <Intro
+          heading="Build The Community Your Fans Will Love"
+          text="Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion."
+          imgALT="screen"
+          imgSRC={Screen}
+        />
+
+        <Grid container direction="row">
+          <Cards
+            classes="card-cont"
+            alt="communities-icon"
+            imageSRC={Communities}
+            title=" 1.4k+"
+            text="Communities Formed"
+=======
 import Whitelogo from "../images/logo-white.svg";
 import Phone from "../images/icon-phone.svg";
 import Email from "../images/icon-email.svg";
@@ -46,13 +88,40 @@ function App() {
         />
 
         <Grid container direction="row">
+>>>>>>> GitHub
+          />
           <Cards
+<<<<<<< Codesandbox
+            classes="card-cont center"
+            alt="message-icon"
+            imageSRC={Messages}
+            title="2.7m+"
+            text="Messages Sent"
+=======
             classes="card-cont"
             alt="communities-icon"
             imageSRC={Communities}
             title=" 1.4k+"
             text="Communities Formed"
+>>>>>>> GitHub
           />
+<<<<<<< Codesandbox
+        </Grid>
+      </Grid>
+
+      {features.map(createFeat)}
+      <Cta
+        title="Ready To Build Your Community?"
+        buttonText="Get Started For Free"
+      />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+=======
           <Cards
             classes="card-cont center"
             alt="message-icon"
@@ -68,6 +137,7 @@ function App() {
         title="Ready To Build Your Community?"
         buttonText="Get Started For Free"
       />
+>>>>>>> GitHub
       <Grid className="footer ">
         <Grid container direction="row" className="reverse-order">
           <Grid item md={6} className="footer-contacts">
